@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: dashboard
 
     steps:
       - name: Checkout code
@@ -20,9 +23,6 @@ jobs:
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
-
-      - name: Change directory to dashboard
-        run: cd dashboard
 
       - name: Install dependencies
         run: bun install
