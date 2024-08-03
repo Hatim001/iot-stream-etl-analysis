@@ -1,4 +1,4 @@
-# IOT Device Stream ETL Analysis
+# IoT Device Stream ETL Analysis
 
 ## Overview
 
